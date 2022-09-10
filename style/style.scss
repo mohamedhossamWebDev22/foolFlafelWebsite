@@ -1,0 +1,144 @@
+$color1: darkred;
+$color2: white;
+
+$im1: '../imgs/pic\ \(3\).png';
+$im2: '../imgs/pic\ \(5\).png';
+
+@mixin arabicFont($size, $color) {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: $size;
+
+    color: $color;
+}
+@mixin flexCenter($num, $mt) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: $num;
+
+    margin-top: $mt;
+}
+
+body, html{
+    scroll-behavior: smooth;
+
+    background: $color1;
+}
+
+a{
+    text-decoration: none;
+
+    color: $color1
+}
+
+.nav{
+    @include arabicFont(20px, $color1);
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+    align-items: center;
+    
+    background: $color2;
+
+    box-shadow: 0px 4px 8px black;
+    h1{
+        font: size 30px;
+
+        &:hover{
+            font-weight: 500;
+        }
+    }
+    a{
+        &:hover{
+            font-size: 25px;
+        }
+    }
+}
+
+.first{
+    @include arabicFont(25px, white);
+    @include flexCenter(85vh, 0);
+
+    background-image: url('../imgs/pic\ \(6\).png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.sec{
+    @include arabicFont(25px, white);
+
+    display: flex;
+    flex-direction:row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .second{
+        @include arabicFont(25px, white);
+        @include flexCenter(85vh, 5%);
+
+        background-image: url($im1);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% 100%;
+    }
+
+    p{
+        white-space: pre;
+        text-align: center;
+    }
+}
+
+.thr{
+    @include arabicFont(25px, white);
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .three{
+        @include arabicFont(25px, white);
+        @include flexCenter(85vh, 5%);
+
+        background-image: url('../imgs/pic\ \(2\).png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    p{
+        white-space: pre;
+        text-align: center;
+    }
+}
+
+
+.fou{
+    @include arabicFont(25px, white);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .four{
+        @include arabicFont(25px, white);
+        @include flexCenter(85vh, 5%);
+
+        background-image: url($im2);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    p{
+        white-space: pre;
+        text-align: center;
+    }
+}  
