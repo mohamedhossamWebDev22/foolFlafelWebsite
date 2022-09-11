@@ -68,7 +68,7 @@ a {
   background-size: 50% 100%;
 }
 .sec p {
-  white-space: pre;
+  white-space: normal;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ a {
   background-size: 100% 100%;
 }
 .thr p {
-  white-space: pre;
+  white-space: normal;
   text-align: center;
 }
 
@@ -124,6 +124,67 @@ a {
   background-size: 100% 100%;
 }
 .fou p {
-  white-space: pre;
+  white-space: normal;
   text-align: center;
+}
+
+.menu {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  color: darkred;
+  background: white;
+  text-align: center;
+}
+.menu h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+.menu img {
+  width: 180px;
+  height: 180px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 30%;
+}
+.menu .imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+}
+.menu .imgs .top {
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 30%;
+}
+.menu .imgs .down {
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.menu .food {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h3 {
+  font-size: 15px;
+}
+.about h2 {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
